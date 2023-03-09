@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang='en'>
+<html>
+
+<head>
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<nav id="navbar">
+<header>Introduction to Programming</header>
+<ul>
+<li><a class="nav-link" href="#What_is_Programming?">What is Programming?</a></li>
+<li><a class="nav-link" href="#Translators">Translators</a></li>
+<li><a class="nav-link" href="#Interpreters">Interpreters</a></li>
+<li><a class="nav-link" href="#Compilers">Compilers</a></li>
+<li><a class="nav-link" href="#Hybrid_Translators">Hybrid Translators</a></li>
+<li><a class="nav-link" href="#Assemblers">Assemblers</a></li>
+<li><a class="nav-link" href="#An_Often_Asked_Question">An Often Asked Question</a></li>
+<li><a class="nav-link" href="#Getting_Started:_Your_First_Program">Getting Started: Your First Program</a></li>
+<li><a class="nav-link" href="#Variables">Variables</a></li>
+<li><a class="nav-link" href="#Constants">Constants</a></li>
+<li><a class="nav-link" href="#Literals">Literals</a></li>
+<li><a class="nav-link" href="#Punctuations/Symbols">Punctuations/Symbols</a></li>
+<li><a class="nav-link" href="#Operators">Operators</a></li>
+<li><a class="nav-link" href="#Comments">Comments</a></li>
+<li><a class="nav-link" href="#Reference">Reference</a></li>
+</ul>
+</nav>
+
+<main id="main-doc">
+<section class="main-section" id="What_is_Programming?">
+<header>What is Programming?</header>
+<article>
+<p>
+A simple answer would be, “Programming is the act of instructing computers to carry out tasks.” It is often referred to as coding. So then, what is a computer program? A computer program is a sequence of instructions that the computer executes. Computer in the definition above is any device that is capable of processing code. This could be smartphones, ATMs, the Raspberry Pi, Servers to name a few.
+</p>
+
+<p>
+Machines have their natural language like humans do. Computers do not understand the human language. The natural language of computers is the binary code — 1 and 0. These represent two states: on (1) and off (0). That is the natural language of electronic equipment. It would be hectic for us as humans to communicate with the computer in binary.
+</p>
+
+<p>
+To communicate with machines who speak binary, we do so in a language that’s closer to our own natural language. Such as:
+</p>
+
+<ul>
+<li>English</li>
+<li>French</li>
+<li>Swahili</li>
+<li>Arabic</li>
+</ul>
+
+<p>
+Programming languages are close to our natural languages. But they are more structured and must be thoroughly learned.They could be high level or low level languages. High level programming languages are farther away from the machine language than low level languages. This “farther away” is usually called an abstraction , but we will not go into that in this series. The computer needs a way to understand our human language. To do this, we’ll need a translator.
+</p>
+</article>
+</section>
+
+<section class="main-section" id="Translators">
+<header>Translators</header>
+<article>
+<p>
+Translators have the responsibility of converting your source code to the machine language. This is also known as binary. Remember ones and zeros. We may refer to the binaries as Object Code , the Program or a common word today: App.
+</p>
+
+<code>
+Source Code -> Translator -> Binary/Object Code/Program/App
+</code>
+
+<p>
+Translators can be any of:
+</p>
+
+<ul>
+<li>Interpreters</li>
+<li>Compilers</li>
+<li>A hybrid of Interpreters and Compilers</li>
+<li>Assemblers</li>
+</ul>
+</article>
+</section>
+
+<section class="main-section" id="Interpreters">
+<header>Interpreters</header>
+<article>
+<p>
+Some languages are interpreted. The translator processes the source code line by line and runs every line in the final program or app. This means that interpreted source code starts running until it encounters an error. Then the interpreter stops to report such errors.
+</p>
+
+<p>
+Python is a good example of an interpreted programming language.
+</p>
+</article>
+</section>
+
+<section class="main-section" id="Compilers">
+<header>Compilers</header>
+<article>
+<p>
+Compilers function differently. They convert the source code in its entirety via a compilation process to binary. The binary is then executed. If there were errors in the source code, they are detected during the compilation time and flagged. This interrupts the compilation process, and no binary is generated.
+</p>
+
+<p>
+Interpreters translate line by line and execute the line before going on to the next line. Compilers translate all lines of a program to a file (binary) and execute the whole file.
+</p>
+
+<p>
+Remember the definition of computer program? It’s a sequence of instructions that is executed by a computer.
+</p>
+
+<p>
+An executing program is usually called a process. Such programs use certain resources on the computer system or smartphone such as memory, disk space and the file system. An executing program can also be said to be running.
+</p>
+
+<p>
+We use the word ‘run’ when we execute a computer program. The time it takes to run such programs is known as the run-time of the program.
+</p>
+
+<p>
+It is common to see programs referred to as Apps. We also associate programs with the platforms or environment in which they run, or are designed for. There are web apps, which run on web browsers, such as Google Spreadsheet. There are mobile apps, which run on smartphones such as CandyCrush. There are also desktop apps such as the Evernote desktop app.
+</p>
+
+<p>
+Again, interpreted source code is executed directly from the source file. Compiled source code is converted to a binary file. The binary file is then executed. Compiled source code may fail during run-time even after successfully compiling.
+</p>
+</article>
+</section>
+
+<section class="main-section" id="Hybrid_Translators">
+<header>Hybrid Translators</header>
+<article>
+<p>
+A hybrid translator is a combination of the Interpreter and Compiler. A popular hybrid programming language is Java. Java first compiles your source code to an intermediate format known as the Bytecode.
+</p>
+
+<p>
+The Bytecode is then interpreted and executed by a runtime engine also known as a Virtual machine. This enables the hybrid translators to run the bytecode on various operating systems.
+</p>
+</article>
+</section>
+
+<section class="main-section" id="Assemblers">
+<header>Assemblers</header>
+<article>
+<p>
+There’s the Assembler as well for translating low-level Assembly language to binary.
+</p>
+
+<p>
+For this series, we will only focus on the High level languages.
+</p>
+
+<p>
+A good way to look at Translators is to see them as a program in themselves. You need to download or get them, install them on your computer system and understand their basic workings.
+</p>
+</article>
+</section>
+
+<section class="main-section" id="An_Often_Asked_Question">
+<header>An Often Asked Question</header>
+<article>
+<p>
+Here’s a question beginners usually ask.
+</p>
+
+<code>
+What language do I learn first?
+</code>
+
+<p>
+There are hundreds of programming languages. They are ranked by popularity, community, long term support, pedagogy, business use. They can also be ranked by technicality, such as whether they are functional, imperative, static, strong, or loosely typed.
+</p>
+
+<p>
+Some languages are more pedagogical than others. Some languages are for educational purposes and not for business use. There are languages written, for example, for kids to learn how to code.
+</p>
+
+<p>
+There are very powerful languages that are easy to setup and learn. Python is one such programming language. I usually recommend it to beginners.
+</p>
+
+<img src="https://cdn-media-1.freecodecamp.org/images/P62XnEB9KpX8GJ4AttJ29WDuuUeOs0lt-bbe" alt="Common Programming Languages">
+
+<p>
+When you want to learn a new language, you know now that you would need that language translator. This is a program you install and setup on your computer system.
+</p>
+
+<p>
+I recommend that you start learning how to use a CLI (Command Line Interface). The CLI is the terminal or shell. Think of the terminal as an alternative to a GUI (Graphical User Interface).
+</p>
+
+<p>
+In GUIs, you interact with the computer through the mouse pointer. You also depend on visual renditions of directories, and about everything you do.
+</p>
+
+<p>
+But, when using a CLI you interact with the computer using commands which you type at the prompt or a blinking cursor
+</p>
+
+<code>
+$_
+</code>
+
+<p>
+In Windows, the shipped-in terminal is the command prompt. For Mac and Linux users, you already have a default Bash terminal. To get the same experience on Windows, install Git Bash OR PowerShell.
+</p>
+</article>
+</section>
+
+<section class="main-section" id="Getting_Started:_Your_First_Program">
+<header>Getting Started: Your First Program</header>
+<article>
+<ul>
+<li>Follow the instructions here to setup Python on your computer system.
+</li>
+<li>
+Install a simple editor to type in your source code. You can use sublime text editor for a start.</li>
+<li>
+Open a new file on your editor, and type in the following:
+</li>
+</ul>
+
+<code>
+print ‘Hello Python!’
+</code>
+
+<ul>
+<li>Remember to save the file as main.py
+</li>
+<li>
+Find the path to the file on your CLI, and type the command below:
+</li>
+</ul>
+
+<code>
+$ python main.py
+</code>
+
+<p>
+The result should look like this:
+</p>
+
+<img src="https://cdn-media-1.freecodecamp.org/images/Hz0MuuL5PGDJQnx0iJl06iJQt0F8SVRulj-P" alt="Result of Python Code">
+</article>
+</section>
+
+<section class="main-section" id="Variables">
+<header>Variables</header>
+<article>
+<p>
+Variables are simply named memory locations. We sometimes want to keep data in our source code in a place where we can recall the data, to use again. This is usually a memory location which our compiler/interpreter reserves for us. We need to name these memory locations to recall them later. Consider the Python code snippet below:
+</p>
+
+<code>
+pet_name = 'Hippo'print pet_name
+</code>
+
+<p>
+"pet_name" is an example of a variable. Because the type of data stored in "pet_name" is a string. It is known as a string variable. There are numeric variables as well. Variables are categorized by their data types.
+</p>
+</article>
+</section>
+
+<section class="main-section" id="Constants">
+<header>Constants</header>
+<article>
+<p>
+Constants are values that do not change throughout the lifetime of the program. We use capital letters to enforce that some values are to be constant values. Some languages provide a way to create constant values, while others do not.
+</p>
+
+<p>
+Some languages provide the luxury of declaring types that variables should be. We often call these strongly typed languages. Java is a good example.
+</p>
+
+<p>
+Others do not provide these features. They are loosely typed or dynamic programming languages . Python is a good example.
+</p>
+
+<p>
+Here’s how to declare constant values in JavaScript.
+</p>
+
+<code>const petName = 'Hippo'</code>
+</article>
+</section>
+
+<section class="main-section" id="Literals">
+<header>Literals</header>
+<article>
+<p>
+In every source code, there are data types you use everywhere around your code that will only change if you edit them yourself. We call these literals, which are not to be confused with variables or constants. Literals can be seen once you glance through the source code. They could be strings, numbers, decimals, or other data types.
+</p>
+
+<p>
+In the source code snippet above, the word ‘Hippo’ is a literal — a string literal. It will always be ‘Hippo’ until you edit the source code. As you learn to code, you will learn how to manage literals in your source code in a way that is easy to maintain without changing much of your source code.
+</p>
+</article>
+</section>
+
+<section class="main-section" id="Punctuations/Symbols">
+<header>Punctuations/Symbols</header>
+<article>
+<p>
+In most source code, you will generally find different punctuation marks depending on the programming language. Java has more punctuation marks, for example than Python.
+</p>
+
+<p>
+Common punctuation marks include the comma ( , ), semi-colon( ; ), colon( : ), braces ( {} ), Brackets ( () ), square braces ( [] ), quotation marks ( “ ” ), pipe ( | ), slash ( \ ), period ( . ), question mark ( ? ), caret( ^ ) and percentage ( % ).
+</p>
+
+<p>
+Welcome to the world of coding, where punctuation marks are your best friends. You will find yourself typing them a lot.
+</p>
+</article>
+</section>
+
+<section class="main-section" id="Operators">
+<header>Operators</header>
+<article>
+<p>
+The chances that you will write code to perform an operation is very high. In the slightest way, you will perform an assignment operation in your source code. We are presented with a large number of operators by the programming languages we use. Examples include addition( + ), division( / ) multiplication( * ), subtraction( - ) and greater than( &gt; ).
+</p>
+
+<p>
+Operators can generally be classified as follows:
+</p>
+
+<ul>
+<li>Assignment Operators - This is sometimes misconstrued as equal-to. Equal to is used to compare two values. Assignment Operator puts a value in a variable, such as "pet_name = 'Hippo'"</li>
+<li>Arithmetic Operators - Comprises operators for carrying out arithmetic tasks such as addition, and subtraction. Some languages provide some arithmetic operators which others may not have. For example the modulus operator ( % ) returns the remainder value in division operations.</li>
+<li>Relational Operators - Used for comparing values. They include greater than, less than, equal-to, not-equal-to. Their representation varies as well depending on what programming language you are learning. &lt;> is not equal-to in some languages, while in others, it’s != or !==.</li>
+<li>Logical Operators - Used to compute logical operations. The commonly used logical operators are and , or , not. Some languages represent these operators with symbols such as && for and , || for or , and ! for not. Logical Operation values usually evaluate to Boolean valuestrue or false.</li>
+</ul>
+</article>
+</section>
+
+<section class="main-section" id="Comments">
+<header>Comments</header>
+<article>
+<p>
+Documentation will be an important aspect of your coding activities. It is how you explain your code to other programmers. This is done via comments that are occasionally added to parts of your code. Through comments, you can guide other programmers through what kind of data your code works with and the kind of output that it generates.
+</p>
+
+<p>
+Usually, the compiler ignores lines of code that are comments.
+</p>
+
+<p>
+Comments vary across languages. The #is used to introduce comments in Python.
+</p>
+
+<p>
+Here’s an example of a comment in Python.
+</p>
+
+<code># program snippet to compute fibonacci of N numbers</code>
+
+<p>
+In Java, C and C++ , there are comments for a single line just like the # in Python, but the // symbol is used instead. There are multi-line comments as well /* … */. You can read more about comments in the language that you have chosen to learn.
+</p>
+</article>
+</section>
+
+<section class="main-section" id="Reference">
+<header>Reference</header>
+<article>
+<p>
+All the documentation in this page is taken from <a href="https://www.freecodecamp.org/news/a-gentler-introduction-to-programming-1f57383a1b2c/">freeCodeCamp</a>.
+</p>
+</article>
+</section>
+
+</main>
+
+</body>
+
+</html>
